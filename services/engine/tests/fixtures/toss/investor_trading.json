@@ -1,0 +1,1386 @@
+{
+  "005930": [
+    {
+      "date": "2026-09-29",
+      "updatedAt": "2026-09-29T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8000000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "-1000"
+      },
+      "foreigner": {
+        "buyVolume": "2010000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-85000"
+      },
+      "institution": {
+        "buyVolume": "1007000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-59000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-28",
+      "updatedAt": "2026-09-28T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8001000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "0"
+      },
+      "foreigner": {
+        "buyVolume": "2180000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "85000"
+      },
+      "institution": {
+        "buyVolume": "1098000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "32000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-25",
+      "updatedAt": "2026-09-25T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8002000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "1000"
+      },
+      "foreigner": {
+        "buyVolume": "2150000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "55000"
+      },
+      "institution": {
+        "buyVolume": "1049000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-17000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-24",
+      "updatedAt": "2026-09-24T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8003000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "2000"
+      },
+      "foreigner": {
+        "buyVolume": "2120000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "25000"
+      },
+      "institution": {
+        "buyVolume": "1000000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-66000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-23",
+      "updatedAt": "2026-09-23T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8004000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "3000"
+      },
+      "foreigner": {
+        "buyVolume": "2090000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-5000"
+      },
+      "institution": {
+        "buyVolume": "1091000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "25000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-22",
+      "updatedAt": "2026-09-22T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8005000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "4000"
+      },
+      "foreigner": {
+        "buyVolume": "2060000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-35000"
+      },
+      "institution": {
+        "buyVolume": "1042000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-24000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-21",
+      "updatedAt": "2026-09-21T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8006000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "5000"
+      },
+      "foreigner": {
+        "buyVolume": "2030000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-65000"
+      },
+      "institution": {
+        "buyVolume": "1133000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "67000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-18",
+      "updatedAt": "2026-09-18T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8007000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "6000"
+      },
+      "foreigner": {
+        "buyVolume": "2000000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-95000"
+      },
+      "institution": {
+        "buyVolume": "1084000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "18000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-17",
+      "updatedAt": "2026-09-17T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8008000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "7000"
+      },
+      "foreigner": {
+        "buyVolume": "2170000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "75000"
+      },
+      "institution": {
+        "buyVolume": "1035000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-31000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-16",
+      "updatedAt": "2026-09-16T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8009000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "8000"
+      },
+      "foreigner": {
+        "buyVolume": "2140000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "45000"
+      },
+      "institution": {
+        "buyVolume": "1126000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "60000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-15",
+      "updatedAt": "2026-09-15T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8010000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "9000"
+      },
+      "foreigner": {
+        "buyVolume": "2110000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "15000"
+      },
+      "institution": {
+        "buyVolume": "1077000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "11000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-14",
+      "updatedAt": "2026-09-14T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8011000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "10000"
+      },
+      "foreigner": {
+        "buyVolume": "2080000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-15000"
+      },
+      "institution": {
+        "buyVolume": "1028000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-38000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-11",
+      "updatedAt": "2026-09-11T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8012000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "11000"
+      },
+      "foreigner": {
+        "buyVolume": "2050000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-45000"
+      },
+      "institution": {
+        "buyVolume": "1119000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "53000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-10",
+      "updatedAt": "2026-09-10T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8013000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "12000"
+      },
+      "foreigner": {
+        "buyVolume": "2020000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-75000"
+      },
+      "institution": {
+        "buyVolume": "1070000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "4000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-09",
+      "updatedAt": "2026-09-09T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8014000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "13000"
+      },
+      "foreigner": {
+        "buyVolume": "2190000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "95000"
+      },
+      "institution": {
+        "buyVolume": "1021000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-45000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-08",
+      "updatedAt": "2026-09-08T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8015000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "14000"
+      },
+      "foreigner": {
+        "buyVolume": "2160000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "65000"
+      },
+      "institution": {
+        "buyVolume": "1112000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "46000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-07",
+      "updatedAt": "2026-09-07T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8016000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "15000"
+      },
+      "foreigner": {
+        "buyVolume": "2130000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "35000"
+      },
+      "institution": {
+        "buyVolume": "1063000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-3000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-04",
+      "updatedAt": "2026-09-04T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8017000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "16000"
+      },
+      "foreigner": {
+        "buyVolume": "2100000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "5000"
+      },
+      "institution": {
+        "buyVolume": "1014000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-52000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-03",
+      "updatedAt": "2026-09-03T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8018000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "17000"
+      },
+      "foreigner": {
+        "buyVolume": "2070000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-25000"
+      },
+      "institution": {
+        "buyVolume": "1105000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "39000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-02",
+      "updatedAt": "2026-09-02T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8019000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "18000"
+      },
+      "foreigner": {
+        "buyVolume": "2040000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-55000"
+      },
+      "institution": {
+        "buyVolume": "1056000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-10000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-01",
+      "updatedAt": "2026-09-01T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8020000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "19000"
+      },
+      "foreigner": {
+        "buyVolume": "2010000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-85000"
+      },
+      "institution": {
+        "buyVolume": "1007000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-59000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-31",
+      "updatedAt": "2026-08-31T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8021000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "20000"
+      },
+      "foreigner": {
+        "buyVolume": "2180000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "85000"
+      },
+      "institution": {
+        "buyVolume": "1098000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "32000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-28",
+      "updatedAt": "2026-08-28T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8022000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "21000"
+      },
+      "foreigner": {
+        "buyVolume": "2150000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "55000"
+      },
+      "institution": {
+        "buyVolume": "1049000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-17000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-27",
+      "updatedAt": "2026-08-27T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8023000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "22000"
+      },
+      "foreigner": {
+        "buyVolume": "2120000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "25000"
+      },
+      "institution": {
+        "buyVolume": "1000000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-66000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-26",
+      "updatedAt": "2026-08-26T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8024000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "23000"
+      },
+      "foreigner": {
+        "buyVolume": "2090000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-5000"
+      },
+      "institution": {
+        "buyVolume": "1091000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "25000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-25",
+      "updatedAt": "2026-08-25T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8025000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "24000"
+      },
+      "foreigner": {
+        "buyVolume": "2060000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-35000"
+      },
+      "institution": {
+        "buyVolume": "1042000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-24000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-24",
+      "updatedAt": "2026-08-24T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8026000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "25000"
+      },
+      "foreigner": {
+        "buyVolume": "2030000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-65000"
+      },
+      "institution": {
+        "buyVolume": "1133000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "67000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-21",
+      "updatedAt": "2026-08-21T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8027000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "26000"
+      },
+      "foreigner": {
+        "buyVolume": "2000000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-95000"
+      },
+      "institution": {
+        "buyVolume": "1084000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "18000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-20",
+      "updatedAt": "2026-08-20T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8028000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "27000"
+      },
+      "foreigner": {
+        "buyVolume": "2170000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "75000"
+      },
+      "institution": {
+        "buyVolume": "1035000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-31000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-19",
+      "updatedAt": "2026-08-19T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8029000",
+        "sellVolume": "8001000",
+        "netBuyVolume": "28000"
+      },
+      "foreigner": {
+        "buyVolume": "2140000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "45000"
+      },
+      "institution": {
+        "buyVolume": "1126000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "60000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    }
+  ],
+  "000660": [
+    {
+      "date": "2026-09-29",
+      "updatedAt": "2026-09-29T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8000000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "-2000"
+      },
+      "foreigner": {
+        "buyVolume": "2020000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-75000"
+      },
+      "institution": {
+        "buyVolume": "1014000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-52000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-28",
+      "updatedAt": "2026-09-28T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8001000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "-1000"
+      },
+      "foreigner": {
+        "buyVolume": "2190000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "95000"
+      },
+      "institution": {
+        "buyVolume": "1105000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "39000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-25",
+      "updatedAt": "2026-09-25T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8002000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "0"
+      },
+      "foreigner": {
+        "buyVolume": "2160000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "65000"
+      },
+      "institution": {
+        "buyVolume": "1056000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-10000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-24",
+      "updatedAt": "2026-09-24T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8003000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "1000"
+      },
+      "foreigner": {
+        "buyVolume": "2130000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "35000"
+      },
+      "institution": {
+        "buyVolume": "1007000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-59000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-23",
+      "updatedAt": "2026-09-23T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8004000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "2000"
+      },
+      "foreigner": {
+        "buyVolume": "2100000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "5000"
+      },
+      "institution": {
+        "buyVolume": "1098000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "32000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-22",
+      "updatedAt": "2026-09-22T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8005000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "3000"
+      },
+      "foreigner": {
+        "buyVolume": "2070000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-25000"
+      },
+      "institution": {
+        "buyVolume": "1049000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-17000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-21",
+      "updatedAt": "2026-09-21T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8006000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "4000"
+      },
+      "foreigner": {
+        "buyVolume": "2040000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-55000"
+      },
+      "institution": {
+        "buyVolume": "1000000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-66000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-18",
+      "updatedAt": "2026-09-18T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8007000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "5000"
+      },
+      "foreigner": {
+        "buyVolume": "2010000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-85000"
+      },
+      "institution": {
+        "buyVolume": "1091000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "25000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-17",
+      "updatedAt": "2026-09-17T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8008000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "6000"
+      },
+      "foreigner": {
+        "buyVolume": "2180000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "85000"
+      },
+      "institution": {
+        "buyVolume": "1042000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-24000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-16",
+      "updatedAt": "2026-09-16T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8009000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "7000"
+      },
+      "foreigner": {
+        "buyVolume": "2150000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "55000"
+      },
+      "institution": {
+        "buyVolume": "1133000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "67000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-15",
+      "updatedAt": "2026-09-15T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8010000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "8000"
+      },
+      "foreigner": {
+        "buyVolume": "2120000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "25000"
+      },
+      "institution": {
+        "buyVolume": "1084000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "18000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-14",
+      "updatedAt": "2026-09-14T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8011000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "9000"
+      },
+      "foreigner": {
+        "buyVolume": "2090000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-5000"
+      },
+      "institution": {
+        "buyVolume": "1035000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-31000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-11",
+      "updatedAt": "2026-09-11T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8012000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "10000"
+      },
+      "foreigner": {
+        "buyVolume": "2060000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-35000"
+      },
+      "institution": {
+        "buyVolume": "1126000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "60000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-10",
+      "updatedAt": "2026-09-10T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8013000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "11000"
+      },
+      "foreigner": {
+        "buyVolume": "2030000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-65000"
+      },
+      "institution": {
+        "buyVolume": "1077000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "11000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-09",
+      "updatedAt": "2026-09-09T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8014000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "12000"
+      },
+      "foreigner": {
+        "buyVolume": "2000000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-95000"
+      },
+      "institution": {
+        "buyVolume": "1028000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-38000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-08",
+      "updatedAt": "2026-09-08T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8015000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "13000"
+      },
+      "foreigner": {
+        "buyVolume": "2170000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "75000"
+      },
+      "institution": {
+        "buyVolume": "1119000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "53000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-07",
+      "updatedAt": "2026-09-07T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8016000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "14000"
+      },
+      "foreigner": {
+        "buyVolume": "2140000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "45000"
+      },
+      "institution": {
+        "buyVolume": "1070000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "4000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-04",
+      "updatedAt": "2026-09-04T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8017000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "15000"
+      },
+      "foreigner": {
+        "buyVolume": "2110000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "15000"
+      },
+      "institution": {
+        "buyVolume": "1021000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-45000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-03",
+      "updatedAt": "2026-09-03T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8018000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "16000"
+      },
+      "foreigner": {
+        "buyVolume": "2080000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-15000"
+      },
+      "institution": {
+        "buyVolume": "1112000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "46000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-02",
+      "updatedAt": "2026-09-02T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8019000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "17000"
+      },
+      "foreigner": {
+        "buyVolume": "2050000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-45000"
+      },
+      "institution": {
+        "buyVolume": "1063000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-3000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-09-01",
+      "updatedAt": "2026-09-01T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8020000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "18000"
+      },
+      "foreigner": {
+        "buyVolume": "2020000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-75000"
+      },
+      "institution": {
+        "buyVolume": "1014000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-52000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-31",
+      "updatedAt": "2026-08-31T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8021000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "19000"
+      },
+      "foreigner": {
+        "buyVolume": "2190000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "95000"
+      },
+      "institution": {
+        "buyVolume": "1105000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "39000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-28",
+      "updatedAt": "2026-08-28T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8022000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "20000"
+      },
+      "foreigner": {
+        "buyVolume": "2160000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "65000"
+      },
+      "institution": {
+        "buyVolume": "1056000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-10000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-27",
+      "updatedAt": "2026-08-27T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8023000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "21000"
+      },
+      "foreigner": {
+        "buyVolume": "2130000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "35000"
+      },
+      "institution": {
+        "buyVolume": "1007000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-59000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-26",
+      "updatedAt": "2026-08-26T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8024000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "22000"
+      },
+      "foreigner": {
+        "buyVolume": "2100000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "5000"
+      },
+      "institution": {
+        "buyVolume": "1098000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "32000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-25",
+      "updatedAt": "2026-08-25T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8025000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "23000"
+      },
+      "foreigner": {
+        "buyVolume": "2070000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-25000"
+      },
+      "institution": {
+        "buyVolume": "1049000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-17000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-24",
+      "updatedAt": "2026-08-24T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8026000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "24000"
+      },
+      "foreigner": {
+        "buyVolume": "2040000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-55000"
+      },
+      "institution": {
+        "buyVolume": "1000000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-66000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-21",
+      "updatedAt": "2026-08-21T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8027000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "25000"
+      },
+      "foreigner": {
+        "buyVolume": "2010000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "-85000"
+      },
+      "institution": {
+        "buyVolume": "1091000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "25000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-20",
+      "updatedAt": "2026-08-20T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8028000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "26000"
+      },
+      "foreigner": {
+        "buyVolume": "2180000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "85000"
+      },
+      "institution": {
+        "buyVolume": "1042000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "-24000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    },
+    {
+      "date": "2026-08-19",
+      "updatedAt": "2026-08-19T18:10:00+09:00",
+      "individual": {
+        "buyVolume": "8029000",
+        "sellVolume": "8002000",
+        "netBuyVolume": "27000"
+      },
+      "foreigner": {
+        "buyVolume": "2150000",
+        "sellVolume": "2095000",
+        "netBuyVolume": "55000"
+      },
+      "institution": {
+        "buyVolume": "1133000",
+        "sellVolume": "1066000",
+        "netBuyVolume": "67000",
+        "breakdown": null
+      },
+      "otherCorporation": null,
+      "foreignerHolding": null,
+      "cfd": null
+    }
+  ]
+}

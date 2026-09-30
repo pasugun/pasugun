@@ -5,6 +5,7 @@ from pathlib import Path
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 def _find_root_env_file() -> Path | None:
     """모노레포 루트(.env.example 이 있는 곳)의 .env 를 찾는다.
 
@@ -17,6 +18,8 @@ def _find_root_env_file() -> Path | None:
 
 
 ROOT_ENV_FILE = _find_root_env_file()
+# services/engine (src/engine/config.py 기준 두 단계 위). 컨테이너에서는 /app.
+ENGINE_ROOT = Path(__file__).resolve().parents[2]
 
 
 class TossMode(StrEnum):
@@ -28,12 +31,18 @@ class Settings(BaseSettings):
     """환경변수(.env)에서 읽는 설정. 비밀값은 SecretStr라 repr·로그에 값이 찍히지 않는다."""
 
     model_config = SettingsConfigDict(
-        env_file=ROOT_ENV_FILE, env_file_encoding="utf-8", extra="ignore"
+        env_file=ROOT_ENV_FILE,
+        env_file_encoding="utf-8",
+        env_ignore_empty=True,  # .env 의 "KEY=" 는 미설정으로 본다
+        extra="ignore",
     )
 
     database_url: str = "postgresql+psycopg://signal:signal@localhost:5433/signal"
 
     toss_mode: TossMode = TossMode.MOCK
+    toss_base_url: str = "https://openapi.tossinvest.com"
+    toss_timeout_seconds: float = 10.0
+    toss_mock_fixtures_dir: Path = ENGINE_ROOT / "tests" / "fixtures" / "toss"
     toss_client_id: SecretStr | None = None
     toss_client_secret: SecretStr | None = None
     toss_account_seq: str | None = None

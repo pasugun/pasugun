@@ -1,0 +1,48 @@
+[
+  {
+    "orderId": "mock-order-2",
+    "symbol": "005930",
+    "side": "SELL",
+    "orderType": "LIMIT",
+    "timeInForce": "DAY",
+    "status": "FILLED",
+    "price": "73000",
+    "quantity": "10",
+    "orderAmount": null,
+    "currency": "KRW",
+    "orderedAt": "2026-03-30T10:00:00+09:00",
+    "canceledAt": null,
+    "execution": {
+      "filledQuantity": "10",
+      "averageFilledPrice": "73000",
+      "filledAmount": "730000",
+      "commission": "1400",
+      "tax": "1314",
+      "filledAt": "2026-03-30T10:00:03+09:00",
+      "settlementDate": "2026-04-01"
+    }
+  },
+  {
+    "orderId": "0d5QIHjmtksbsmM-hBRAgP-ExI8iodGm9fAR5txelPfnMM8XQ_swoJdwL5RpGWMo",
+    "symbol": "005930",
+    "side": "BUY",
+    "orderType": "LIMIT",
+    "timeInForce": "DAY",
+    "status": "FILLED",
+    "price": "70000",
+    "quantity": "10",
+    "orderAmount": null,
+    "currency": "KRW",
+    "orderedAt": "2026-03-28T09:30:00+09:00",
+    "canceledAt": null,
+    "execution": {
+      "filledQuantity": "10",
+      "averageFilledPrice": "70000",
+      "filledAmount": "700000",
+      "commission": "1400",
+      "tax": "0",
+      "filledAt": "2026-03-28T09:31:15+09:00",
+      "settlementDate": "2026-03-30"
+    }
+  }
+]

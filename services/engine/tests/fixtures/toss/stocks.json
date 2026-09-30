@@ -1,0 +1,65 @@
+[
+  {
+    "symbol": "005930",
+    "name": "삼성전자",
+    "englishName": "SamsungElec",
+    "isinCode": "KR7005930003",
+    "market": "KOSPI",
+    "securityType": "STOCK",
+    "isCommonShare": true,
+    "status": "ACTIVE",
+    "currency": "KRW",
+    "listDate": "1975-06-11",
+    "delistDate": null,
+    "sharesOutstanding": "5919637922",
+    "leverageFactor": null,
+    "koreanMarketDetail": {
+      "liquidationTrading": false,
+      "nxtSupported": true,
+      "krxTradingSuspended": false,
+      "nxtTradingSuspended": false
+    }
+  },
+  {
+    "symbol": "000660",
+    "name": "SK하이닉스",
+    "englishName": "SKhynix",
+    "isinCode": "KR7000660001",
+    "market": "KOSPI",
+    "securityType": "STOCK",
+    "isCommonShare": true,
+    "status": "ACTIVE",
+    "currency": "KRW",
+    "listDate": "1996-12-26",
+    "delistDate": null,
+    "sharesOutstanding": "728002365",
+    "leverageFactor": null,
+    "koreanMarketDetail": {
+      "liquidationTrading": false,
+      "nxtSupported": true,
+      "krxTradingSuspended": false,
+      "nxtTradingSuspended": false
+    }
+  },
+  {
+    "symbol": "069500",
+    "name": "KODEX 200",
+    "englishName": "KODEX 200",
+    "isinCode": "KR7069500007",
+    "market": "KOSPI",
+    "securityType": "ETF",
+    "isCommonShare": true,
+    "status": "ACTIVE",
+    "currency": "KRW",
+    "listDate": "2002-10-14",
+    "delistDate": null,
+    "sharesOutstanding": "100000000",
+    "leverageFactor": "1.0",
+    "koreanMarketDetail": {
+      "liquidationTrading": false,
+      "nxtSupported": true,
+      "krxTradingSuspended": false,
+      "nxtTradingSuspended": false
+    }
+  }
+]

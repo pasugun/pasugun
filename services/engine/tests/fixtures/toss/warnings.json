@@ -1,0 +1,17 @@
+{
+  "005930": [],
+  "000660": [
+    {
+      "warningType": "OVERHEATED",
+      "exchange": "KRX",
+      "startDate": "2026-03-20",
+      "endDate": "2026-03-27"
+    },
+    {
+      "warningType": "VI_STATIC",
+      "exchange": "KRX",
+      "startDate": "2026-03-26",
+      "endDate": null
+    }
+  ]
+}
