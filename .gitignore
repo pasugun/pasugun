@@ -1,0 +1,31 @@
+# 비밀값
+.env
+.env.*
+!.env.example
+
+# 데이터·백업
+data/
+*.dump
+*.sql.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+.pnpm-store/
+
+# OS / 에디터
+.DS_Store
+.idea/
+.vscode/
