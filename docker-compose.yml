@@ -1,0 +1,64 @@
+name: signal-robot
+
+x-engine: &engine
+  build: ./services/engine
+  env_file: .env
+  environment:
+    DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-signal}:${POSTGRES_PASSWORD:-signal}@db:5432/${POSTGRES_DB:-signal}
+    TZ: Asia/Seoul
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-signal}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-signal}
+      POSTGRES_DB: ${POSTGRES_DB:-signal}
+      TZ: Asia/Seoul
+      PGTZ: Asia/Seoul
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # 마이그레이션(시드 포함)을 한 번 실행하고 끝난다.
+  migrate:
+    <<: *engine
+    command: ["alembic", "upgrade", "head"]
+    depends_on:
+      db:
+        condition: service_healthy
+
+  engine-api:
+    <<: *engine
+    command: ["uvicorn", "engine.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "${ENGINE_API_PORT:-8000}:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  # TODO(3·5단계): 수집 배치 스케줄러 + 실시간 워커
+  # engine-worker:
+  #   <<: *engine
+  #   command: ["python", "-m", "engine.worker"]
+  #   depends_on:
+  #     migrate:
+  #       condition: service_completed_successfully
+
+  web:
+    build: ./apps/web
+    environment:
+      ENGINE_API_URL: http://engine-api:8000
+    ports:
+      - "${WEB_PORT:-3001}:3000"
+    depends_on:
+      - engine-api
+
+volumes:
+  pgdata:

@@ -1,0 +1,44 @@
+[project]
+name = "engine"
+version = "0.1.0"
+description = "시그널 로봇 엔진: API, 수집 배치, 실시간 워커, 신호 엔진, 백테스터"
+authors = [
+    { name = "suyoooi", email = "suyoooi@ex-em.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.142.1",
+    "httpx>=0.28.1",
+    "psycopg[binary]>=3.3.6",
+    "pydantic-settings>=2.15.0",
+    "sqlalchemy>=2",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "respx>=0.23.1",
+    "ruff>=0.16.9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+# 로컬 alembic/ 폴더 때문에 first-party 로 오인하지 않게 한다.
+known-third-party = ["alembic"]
