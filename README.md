@@ -56,5 +56,21 @@ pnpm test
 pnpm lint && pnpm typecheck
 ```
 
+## 토스 API 확인 (조회 전용)
+
+```bash
+cd services/engine
+uv run python -m engine.toss.cli prices 005930          # 현재가
+uv run python -m engine.toss.cli candles 005930 --count 5
+uv run python -m engine.toss.cli calendar               # 장 운영 시간
+uv run python -m engine.toss.cli --help                 # 전체 명령
+```
+
+- `TOSS_MODE=mock`(기본): `services/engine/tests/fixtures/toss/` 의 JSON 으로 응답합니다. 네트워크·DB 불필요.
+- `TOSS_MODE=live`: `.env` 에 `TOSS_CLIENT_ID`, `TOSS_CLIENT_SECRET`(계좌 조회는 `TOSS_ACCOUNT_SEQ`도)를 넣고,
+  토스증권 WTS 설정 > Open API > 허용 IP 에 현재 공인 IP 를 등록해야 합니다.
+  토큰은 DB `api_tokens` 에 저장해 모든 프로세스가 공유하므로 DB 가 떠 있어야 합니다(`docker compose up -d db`).
+  `accountSeq` 는 `uv run python -m engine.toss.cli accounts` 로 확인합니다.
+
 마이그레이션 추가: 모델(`services/engine/src/engine/db/models.py`)을 고친 뒤
 `uv run alembic revision --autogenerate -m "설명"` → 생성된 파일 검토 → `uv run alembic upgrade head`.

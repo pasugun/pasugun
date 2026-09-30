@@ -1,0 +1,20 @@
+[
+  {
+    "symbol": "005930",
+    "timestamp": "2026-09-29T15:30:00+09:00",
+    "lastPrice": "72000",
+    "currency": "KRW"
+  },
+  {
+    "symbol": "000660",
+    "timestamp": "2026-09-29T15:30:00+09:00",
+    "lastPrice": "192500",
+    "currency": "KRW"
+  },
+  {
+    "symbol": "069500",
+    "timestamp": "2026-09-29T15:30:00+09:00",
+    "lastPrice": "38500",
+    "currency": "KRW"
+  }
+]
