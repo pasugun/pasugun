@@ -63,9 +63,13 @@ class Stock(Base):
     name: Mapped[str] = mapped_column(Text)
     market: Mapped[str | None] = mapped_column(Text)
     status: Mapped[str | None] = mapped_column(Text)
+    security_type: Mapped[str | None] = mapped_column(Text)  # STOCK | ETF | REIT ...
     is_common_share: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
+    trading_suspended: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
+    liquidation_trading: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
     list_date: Mapped[date | None] = mapped_column(Date)
     delist_date: Mapped[date | None] = mapped_column(Date)
+    source: Mapped[str] = mapped_column(Text, server_default=text("'toss'"))
     updated_at: Mapped[datetime] = _now()
 
 
@@ -87,7 +91,12 @@ class CandleDaily(Base):
 
 
 class InvestorTradingDaily(Base):
-    """투자자별 일별 순매수(주식 수)."""
+    """투자자별 일별 순매수(주식 수).
+
+    토스의 당일 기록은 장중 잠정치라 개인(individual)이 null 이다.
+    최근 며칠은 다음 수집 때 다시 받아 채운다.
+    출처별 기준 차이: toss 의 foreigner 는 등록외국인, pykrx 는 외국인합계.
+    """
 
     __tablename__ = "investor_trading_daily"
 
@@ -95,8 +104,30 @@ class InvestorTradingDaily(Base):
     date: Mapped[date] = mapped_column(Date, primary_key=True)
     foreigner_net: Mapped[int] = mapped_column(BigInteger)
     institution_net: Mapped[int] = mapped_column(BigInteger)
-    individual_net: Mapped[int] = mapped_column(BigInteger)
+    individual_net: Mapped[int | None] = mapped_column(BigInteger)
+    source: Mapped[str] = mapped_column(Text, server_default=text("'toss'"))
     updated_at: Mapped[datetime] = _now()
+
+
+class CollectRun(Base):
+    """수집 작업 실행 기록. 운영 알림·재실행 판단에 쓴다."""
+
+    __tablename__ = "collect_runs"
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    job: Mapped[str] = mapped_column(Text)
+    trade_date: Mapped[date] = mapped_column(Date)
+    status: Mapped[str] = mapped_column(Text)  # running | success | partial | failed | skipped
+    started_at: Mapped[datetime] = _now()
+    finished_at: Mapped[datetime | None]
+    detail: Mapped[dict[str, Any]] = mapped_column(server_default=text("'{}'::jsonb"))
+
+    __table_args__ = (
+        CheckConstraint(
+            _in("status", ("running", "success", "partial", "failed", "skipped")), name="status"
+        ),
+        Index("ix_collect_runs_job_trade_date", "job", "trade_date"),
+    )
 
 
 # --- 로봇 ---------------------------------------------------------------------
