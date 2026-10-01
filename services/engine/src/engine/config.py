@@ -47,6 +47,24 @@ class Settings(BaseSettings):
     toss_client_secret: SecretStr | None = None
     toss_account_seq: str | None = None
 
+    # --- 수집 배치 (3단계) ---
+    # 대상 종목: 보통주 + 정상 거래 + 최근 N일 평균 거래대금(종가×거래량) ≥ 기준(원)
+    collect_min_avg_trading_value: int = 1_000_000_000
+    collect_avg_trading_value_days: int = 20
+    # 이미 있는 날짜는 건너뛰되 최근 N거래일은 다시 받아 수정주가·잠정치를 반영한다
+    collect_refetch_recent_days: int = 5
+    # 처음 받는 종목은 이만큼(달력 기준 일수) 과거부터 받는다
+    collect_initial_lookback_days: int = 200
+    # 거래대금 조건과 무관하게 항상 받는 종목 (069500 = KODEX 200, 벤치마크)
+    collect_always_symbols: list[str] = ["069500"]
+    collect_concurrency: int = 4
+    # 평일 15:50 KST (분 시 일 월 요일)
+    collect_cron: str = "50 15 * * mon-fri"
+
+    # pykrx 로 상장폐지 종목을 보충할 때만 필요 (KRX 정보데이터시스템 계정)
+    krx_id: str | None = None
+    krx_pw: SecretStr | None = None
+
     telegram_bot_token: SecretStr | None = None
     telegram_chat_id: str | None = None
 
