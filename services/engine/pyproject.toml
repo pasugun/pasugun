@@ -8,6 +8,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "alembic>=1.20.0",
+    "apscheduler>=3.10,<4",
     "fastapi>=0.142.1",
     "httpx>=0.28.1",
     "psycopg[binary]>=3.3.6",
@@ -15,6 +16,14 @@ dependencies = [
     "sqlalchemy[asyncio]>=2",
     "uvicorn[standard]>=0.54.0",
 ]
+
+[project.optional-dependencies]
+krx = [
+    "pykrx>=1.2.9",
+]
+
+[project.scripts]
+collect = "engine.collect.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
@@ -41,6 +50,10 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Alembic 자동 생성 파일
+"alembic/versions/*" = ["E501"]
 
 [tool.ruff.lint.isort]
 # 로컬 alembic/ 폴더 때문에 first-party 로 오인하지 않게 한다.
