@@ -1,11 +1,11 @@
-"""DbTokenStore 통합 테스트. 로컬 Postgres(docker compose up db)가 없으면 건너뛴다."""
+"""DbTokenStore 통합 테스트. 테스트 DB(docker compose up db)가 없으면 건너뛴다."""
 
 import asyncio
 import uuid
 from datetime import timedelta
 
 import pytest
-from sqlalchemy import delete, text
+from sqlalchemy import delete
 from sqlalchemy.ext.asyncio import AsyncEngine
 
 from engine.db.models import ApiToken
@@ -15,14 +15,8 @@ from tests.toss.helpers import NOW, FakeIssuer
 
 
 @pytest.fixture
-async def engine() -> AsyncEngine:
-    engine = make_async_engine()
-    try:
-        async with engine.connect() as conn:
-            await conn.execute(text("SELECT 1 FROM api_tokens LIMIT 1"))
-    except Exception as exc:  # noqa: BLE001
-        await engine.dispose()
-        pytest.skip(f"DB 를 쓸 수 없어 건너뜁니다: {type(exc).__name__}")
+async def engine(test_database_url: str) -> AsyncEngine:
+    engine = make_async_engine(test_database_url)
     yield engine
     await engine.dispose()
 
@@ -51,7 +45,7 @@ async def test_two_processes_refresh_concurrently_issue_once(
 ) -> None:
     """서로 다른 TokenManager(=프로세스)가 같은 DB 로 동시에 갱신해도 발급은 한 번."""
     issuer = FakeIssuer()
-    other_engine = make_async_engine()
+    other_engine = make_async_engine(engine.url.render_as_string(hide_password=False))
     try:
         managers = [
             TokenManager(DbTokenStore(e, provider), issuer, now=lambda: NOW)
