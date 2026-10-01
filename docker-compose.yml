@@ -43,13 +43,14 @@ services:
       migrate:
         condition: service_completed_successfully
 
-  # TODO(3·5단계): 수집 배치 스케줄러 + 실시간 워커
-  # engine-worker:
-  #   <<: *engine
-  #   command: ["python", "-m", "engine.worker"]
-  #   depends_on:
-  #     migrate:
-  #       condition: service_completed_successfully
+  # 장 마감 수집 배치 스케줄러 (5단계에서 실시간 워커 추가)
+  engine-worker:
+    <<: *engine
+    command: ["python", "-m", "engine.worker"]
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
 
   web:
     build: ./apps/web
