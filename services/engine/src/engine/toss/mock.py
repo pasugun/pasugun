@@ -7,12 +7,13 @@ tests/fixtures/toss/*.json 을 실제 응답 모델로 파싱해 돌려준다.
 
 import json
 from collections.abc import Sequence
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
 from pydantic import TypeAdapter
 
+from engine.clock import now_kst
 from engine.toss.api import CandleInterval, check_symbol, check_symbols
 from engine.toss.errors import TossApiError
 from engine.toss.models import (
@@ -22,6 +23,7 @@ from engine.toss.models import (
     CandlePage,
     Holdings,
     KrMarketCalendar,
+    KrMarketDay,
     Order,
     OrderPage,
     Price,
@@ -178,8 +180,35 @@ class MockTossClient:
     # --- Market Info / Ranking ------------------------------------------------
 
     async def get_market_calendar_kr(self, day: date | None = None) -> KrMarketCalendar:
-        # TODO(3단계): 휴장일 시나리오가 필요하면 날짜별 fixture 로 확장
-        return self._parse(KrMarketCalendar, "market_calendar_kr")
+        """평일은 개장, 주말과 market_holidays_kr.json 의 날짜는 휴장으로 만든다.
+
+        세션 시각은 market_calendar_kr.json(스펙 예시)을 틀로 쓰고 날짜만 바꾼다.
+        """
+        day = day or now_kst().date()
+        return KrMarketCalendar(
+            today=self._market_day(day),
+            previousBusinessDay=self._market_day(self._step_business_day(day, -1)),
+            nextBusinessDay=self._market_day(self._step_business_day(day, +1)),
+        )
+
+    def _is_business_day(self, day: date) -> bool:
+        holidays = {date.fromisoformat(d) for d in self._load("market_holidays_kr")}
+        return day.weekday() < 5 and day not in holidays
+
+    def _step_business_day(self, day: date, step: int) -> date:
+        day += timedelta(days=step)
+        while not self._is_business_day(day):
+            day += timedelta(days=step)
+        return day
+
+    def _market_day(self, day: date) -> KrMarketDay:
+        if not self._is_business_day(day):
+            return KrMarketDay(date=day, integrated=None)
+        template = self._load("market_calendar_kr")["today"]
+        shifted = json.loads(
+            json.dumps(template["integrated"]).replace(template["date"], day.isoformat())
+        )
+        return KrMarketDay.model_validate({"date": day, "integrated": shifted})
 
     async def get_rankings(
         self,
