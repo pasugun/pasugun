@@ -95,5 +95,22 @@ uv run collect run-daily [--date 2026-09-30]   # 스케줄러 작업을 한 번 
   `uv run collect backfill --years 3 --include-delisted`. `source='pykrx'`, `adjusted=false` 로 저장되고 토스 데이터는 덮어쓰지 않습니다.
 - 테스트는 개발 DB 옆에 `signal_test` DB 를 만들어 씁니다(DB 가 없으면 DB 테스트는 건너뜀).
 
+## 백테스트
+
+```bash
+cd services/engine
+uv run collect backfill --years 3 --with-investor          # 데이터 먼저 (수급은 surge_entry 에 필요)
+uv run backtest run surge_entry --from 2023-01-01 --to 2025-12-31 --split 2025-01-01
+uv run backtest run oversold_rebound --from 2023-01-01 --to 2025-12-31 --split 2025-01-01
+uv run backtest run oversold_rebound ... --param max_holding_days=10   # 파라미터 바꿔 보기(결과와 함께 저장)
+```
+
+- 결과는 학습(split 이전)·검증(split 이후)·전체 구간별로, 비용 차감 전/후와 KODEX 200 보유 대비 초과수익을 표로 보여주고
+  `backtest_runs`, `backtest_trades` 에 저장합니다. 관문(초과수익 > 0, MDD > -20%, 거래 ≥ 100)은 검증 구간 기준으로 판정합니다.
+- 시점 규칙: D 장 마감 판단 → D+1 시가 체결. 지표 청산(RSI ≥ 60)도 다음 날 시가.
+  같은 날 목표가·손절가 모두 닿으면 손절, 손절가 아래 갭하락은 시가, 목표가 위 갭상승은 목표가로 체결(보수적).
+- 대상 종목은 그날까지의 20일 평균 거래대금으로 매일 다시 고릅니다(시점별 유니버스). 상장폐지 종목도 DB 에 있으면 포함합니다.
+- 비용 기본값(수수료 0.015%, 매도세 0.20%, 슬리피지 0.10%)은 추정치입니다. 실제 값으로 `.env` 의 `BACKTEST_*` 를 바꾸세요.
+
 마이그레이션 추가: 모델(`services/engine/src/engine/db/models.py`)을 고친 뒤
 `uv run alembic revision --autogenerate -m "설명"` → 생성된 파일 검토 → `uv run alembic upgrade head`.
