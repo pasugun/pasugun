@@ -19,6 +19,7 @@ EXPECTED_TABLES = {
     "asset_snapshots",
     "cash_flows",
     "holding_alert_state",
+    "collect_runs",
 }
 
 

@@ -10,7 +10,8 @@ from engine.db.session import make_engine
 config = context.config
 
 if config.config_file_name is not None:
-    fileConfig(config.config_file_name)
+    # 테스트 등에서 이미 만든 로거를 끄지 않는다
+    fileConfig(config.config_file_name, disable_existing_loggers=False)
 
 target_metadata = Base.metadata
 

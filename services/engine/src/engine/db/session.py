@@ -1,7 +1,12 @@
 from typing import Any
 
 from sqlalchemy import Engine, create_engine
-from sqlalchemy.ext.asyncio import AsyncEngine, create_async_engine
+from sqlalchemy.ext.asyncio import (
+    AsyncEngine,
+    AsyncSession,
+    async_sessionmaker,
+    create_async_engine,
+)
 from sqlalchemy.orm import sessionmaker
 
 from engine.config import get_settings
@@ -29,6 +34,10 @@ def make_async_engine(database_url: str | None = None, **kwargs: Any) -> AsyncEn
         connect_args=_connect_args(),
         **kwargs,
     )
+
+
+def make_async_sessionmaker(engine: AsyncEngine) -> async_sessionmaker[AsyncSession]:
+    return async_sessionmaker(engine, expire_on_commit=False)
 
 
 SessionLocal = sessionmaker(autoflush=False, expire_on_commit=False)
