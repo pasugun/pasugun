@@ -1,3 +1,4 @@
+from decimal import Decimal
 from enum import StrEnum
 from functools import lru_cache
 from pathlib import Path
@@ -60,6 +61,22 @@ class Settings(BaseSettings):
     collect_concurrency: int = 4
     # 평일 15:50 KST (분 시 일 월 요일)
     collect_cron: str = "50 15 * * mon-fri"
+
+    # --- 백테스트 (4단계) ---
+    # TODO(사용자 확인 필요): 아래 비용 기본값은 추정치다. 실제 수수료는 GET /api/v1/commissions,
+    # 증권거래세(농특세 포함)는 연도·시장별로 다르니 확인 후 .env 로 덮어쓸 것.
+    backtest_buy_fee_rate: Decimal = Decimal("0.00015")  # 매수 수수료 0.015%
+    backtest_sell_fee_rate: Decimal = Decimal("0.00015")  # 매도 수수료 0.015%
+    backtest_sell_tax_rate: Decimal = Decimal("0.0020")  # 매도 거래세 0.20% (주식, ETF 는 0)
+    backtest_slippage_bps: Decimal = Decimal(10)  # 체결 미끄러짐 편도 0.10%
+    backtest_initial_capital: Decimal = Decimal(10_000_000)
+    backtest_max_positions: int = 10
+    backtest_max_weight: Decimal = Decimal("0.10")  # 종목당 최대 비중
+    backtest_benchmark_symbol: str = "069500"  # KODEX 200
+    # 기획서 관문: 비용 차감 후 벤치마크 대비 초과수익 > 0, MDD > -20%, 거래 ≥ 100
+    gate_min_excess_return: Decimal = Decimal(0)
+    gate_mdd_floor: Decimal = Decimal("-0.20")
+    gate_min_trades: int = 100
 
     # pykrx 로 상장폐지 종목을 보충할 때만 필요 (KRX 정보데이터시스템 계정)
     krx_id: str | None = None
